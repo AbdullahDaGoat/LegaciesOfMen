@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
-import Preloader from './components/preloader';
+import Preloader from "./components/preloader"
+import LandingPage from './components/LandingPage';
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -16,7 +17,7 @@ const App = () => {
 
   return (
     <div>
-      {isLoading ? <Preloader /> : <div>Your App Content Goes Here</div>}
+      {isLoading ? <Preloader /> : <LandingPage />}
     </div>
   );
 };
