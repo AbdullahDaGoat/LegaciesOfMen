@@ -1,23 +1,10 @@
-import { useEffect, useState } from 'react';
-import Preloader from "./components/preloader"
+import React from 'react';
 import LandingPage from './components/LandingPage';
 
-const App = () => {
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 5000);
-
-    return () => {
-      clearTimeout(timer);
-    };
-  }, []);
-
+const App: React.FC = () => {
   return (
     <div>
-      {isLoading ? <Preloader /> : <LandingPage />}
+      <LandingPage />
     </div>
   );
 };
