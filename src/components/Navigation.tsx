@@ -1,5 +1,8 @@
 import React from 'react';
 // import styled from 'styled-components';
+
+//https://www.youtube.com/watch?v=5mO-T2o9zuk
+// https://www.youtube.com/watch?v=IF6k0uZuypA
 import "./Navbar.css"
 
 const Navbar: React.FC = () => {
